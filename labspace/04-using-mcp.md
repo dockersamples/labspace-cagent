@@ -43,7 +43,7 @@ If it's up and running, you should see a `200 OK` response.
 2. Start the agent:
 
     ```bash
-    cagent run fetch_agent.yaml
+   docker agent run fetch_agent.yaml
     ```
 
 3. Ask it to fetch web content and summarize it: 
@@ -82,7 +82,7 @@ The same gateway provides web search capabilities:
 2. Run the agent:
 
     ```bash
-    cagent run search_agent.yaml
+    docker agent run search_agent.yaml
     ```
 
 3. Ask it to search for recent news about containers: 
@@ -118,7 +118,7 @@ Context7 provides up-to-date documentation for libraries and frameworks.
 2. Start the agent:
 
     ```bash
-    cagent run docs_agent.yaml
+    docker agent run docs_agent.yaml
     ```
 
 3. Ask it a question that will reference the documentation: 
@@ -165,7 +165,7 @@ Let's combine everything we've learned to create a powerful developer agent.
 2. Run this agent:
 
     ```bash
-    cagent run developer.yaml
+    docker agent run developer.yaml
     ```
 
 3. Ask this:
