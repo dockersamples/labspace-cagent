@@ -1,15 +1,15 @@
 # Introduction
 
-# Building Agents with cagent - Workshop
+# Building Agents with Docker Agent - Workshop
 
-Welcome to this hands-on workshop on building intelligent agents using cagent!
+Welcome to this hands-on workshop on building intelligent agents using Docker Agent!
 This workshop will take you from basic agent concepts to building sophisticated
 multi-agent teams that can handle complex real-world tasks.
 
 ## What is cagent?
 
-cagent is a powerful framework for building and orchestrating AI agents. Unlike
-simple chatbots, cagent agents can:
+Docker Agent is a powerful framework for building and orchestrating AI agents. Unlike
+simple chatbots, Docker Agent can:
 
 - **Take Actions**: Use tools to interact with files, run commands, browse the
   web, and more
@@ -52,7 +52,7 @@ If the command returns successfully, you're ready to go!
 In this workshop we will learn the basics of creating agents and teams of
 agents. How to run them and how to share them.
 
-While we learn how to use cagent we will focus on making a coding agent.
+While we learn how to use Docker Agent we will focus on making a coding agent.
 
 By the end of this workshop you should have everything you need to make your own
 agents that do things for you.
