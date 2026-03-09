@@ -18,7 +18,7 @@ docker login
 
 ### Push Your Agent
 
-Push your developer agent using the following `cagent push` command:
+Push your developer agent using the following `docker agent push` command:
 
 ```bash
 docker agent push developer.yaml $$dockerhubid$$/cagent-developer
@@ -26,7 +26,7 @@ docker agent push developer.yaml $$dockerhubid$$/cagent-developer
 
 ### Pull an Agent
 
-Pull your agent on any other machine by using the `cagent pull` command:
+Pull your agent on any other machine by using the `docker agent pull` command:
 
 ```bash
 docker agent pull $$dockerhubid$$/cagent-developer
@@ -34,7 +34,7 @@ docker agent pull $$dockerhubid$$/cagent-developer
 
 ### Run Directly from Registry
 
-You can also use `cagent run` with a reference to an agent stored in a registry:
+You can also use `docker agent run` with a reference to an agent stored in a registry:
 
 ```bash
 docker agent run $$dockerhubid$$/cagent-developer
