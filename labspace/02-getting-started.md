@@ -13,7 +13,7 @@
     mv /tmp/docker-agent ~/.docker/cli-plugins/docker-agent
 
     # Move it to a location in your PATH
-    sudo mv /tmp/docker-agent /usr/local/bin/docker-agent
+    chmod +x ~/.docker/cli-plugins/docker-agent
     ```
 
 2. Once the install is completed, verify it by checking the version information:
