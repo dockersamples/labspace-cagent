@@ -2,7 +2,7 @@
 
 By now, you should have a couple of agents, and maybe one that already does something useful. Wouldn't it be nice if we could share agents with others?
 
-Sharing agents with cagent is extremely simple - you can push and pull agents to any OCI registry.
+Sharing agents with Docker Agent is extremely simple - you can push and pull agents to any OCI registry.
 
 ### Setting Up Your Docker Hub ID
 
@@ -18,26 +18,26 @@ docker login
 
 ### Push Your Agent
 
-Push your developer agent using the following `cagent push` command:
+Push your developer agent using the following `docker agent push` command:
 
 ```bash
-cagent push developer.yaml $$dockerhubid$$/cagent-developer
+docker agent share developer.yaml $$dockerhubid$$/docker-agent-developer
 ```
 
 ### Pull an Agent
 
-Pull your agent on any other machine by using the `cagent pull` command:
+Pull your agent on any other machine by using the `docker agent pull` command:
 
 ```bash
-cagent pull $$dockerhubid$$/cagent-developer
+docker agent share $$dockerhubid$$/docker-agent-developer
 ```
 
 ### Run Directly from Registry
 
-You can also use `cagent run` with a reference to an agent stored in a registry:
+You can also use `docker agent run` with a reference to an agent stored in a registry:
 
 ```bash
-cagent run $$dockerhubid$$/cagent-developer
+docker agent run $$dockerhubid$$/docker-agent-developer
 ```
 
 

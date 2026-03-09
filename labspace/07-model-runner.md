@@ -36,7 +36,7 @@ EOF
 ### Step 4: Run the Agent
 
 ```bash
-cagent run dmr_pirate_agent.yaml
+docker agent run dmr_pirate_agent.yaml
 ```
 
 ## Benefits of Local Models
@@ -71,7 +71,7 @@ EOF
 Run it:
 
 ```bash
-cagent run dmr_developer.yaml
+docker agent run dmr_developer.yaml
 ```
 
 ## Other Available Models
@@ -101,7 +101,7 @@ agents:
 EOF
 
 # Run it
-cagent run dmr_llama_agent.yaml
+docker agent run dmr_llama_agent.yaml
 ```
 
 ## Learn More

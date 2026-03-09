@@ -1,7 +1,7 @@
 # Step 6: Introduction to Sub-agents
 
 In the previous steps, we created individual agents with various tools. Now
-we'll learn about cagent's most powerful feature: sub-agents. This allows you to
+we'll learn about Docker Agent's most powerful feature: sub-agents. This allows you to
 create teams of specialized agents that work together on complex tasks.
 
 ## Exercise: Create a Simple Multi-Agent System
@@ -33,7 +33,7 @@ speaks in pirate.
 2. Run the agent:
 
     ```bash
-    cagent run multi_agent_pirate.yaml
+    docker agent run multi_agent_pirate.yaml
     ```
 
     If everything goes well you should have a team of agents that can answer questions. If you ask the team to answer you in pirate speak, you will see the `root` agent transfer the task to its sub-agent.
@@ -55,7 +55,7 @@ own purpose.
 
 ## Advanced Example: Development Team
 
-Here is an example used by cagent's PM. It defines a team of 3 agents:
+Here is an example used by Docker Agent's PM. It defines a team of 3 agents:
 
 - a PM
 - a designer  
@@ -223,7 +223,7 @@ Here is an example used by cagent's PM. It defines a team of 3 agents:
 2. Run this development team:
 
     ```bash
-    cagent run dev_team.yaml
+    docker agent run dev_team.yaml
     ```
 
 3. Try asking it to build a simple web application, like: 

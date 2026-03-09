@@ -1,7 +1,7 @@
 services:
   configurator:
     environment:
-      PROJECT_CLONE_URL: https://github.com/dockersamples/labspace-cagent
+      PROJECT_CLONE_URL: https://github.com/dockersamples/labspace-docker-agent
 
   mcp-gateway:
     image: docker/mcp-gateway:v0.40.0

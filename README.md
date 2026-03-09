@@ -1,17 +1,17 @@
-# Labspace - Getting Started with cagent
+# Labspace - Getting Started with Docker Agent
 
-Welcome to this labspace on building intelligent agents using cagent! This workshop will take you from basic agent concepts to building sophisticated multi-agent teams that can handle complex real-world tasks.
+Welcome to this labspace on building intelligent agents using Docker Agent! This workshop will take you from basic agent concepts to building sophisticated multi-agent teams that can handle complex real-world tasks.
 
 ## Learning objectives
 
 In this workshop we will learn:
 
-- How to create simple agents with cagent
+- How to create simple agents with Docker Agent
 - How to use built-in generaic agentic tools
-- How cagent makes it easy to use an MCP server from the MCP Toolkit.
+- How Docker Agent makes it easy to use an MCP server from the MCP Toolkit.
 - How to share agents with Docker Registry
 - When and how to use Multi-agent system
-- Using Docker Model Runner with cagent - Work-in-progress
+- Using Docker Model Runner with Docker Agent - Work-in-progress
 
 
 
@@ -20,14 +20,14 @@ In this workshop we will learn:
 To launch the lab, run the following command:
 
 ```bash
-docker compose -f oci://dockersamples/labspace-cagent up
+docker compose -f oci://dockersamples/labspace-docker-agent up
 ```
  
 and then open your browser to [https://localhost:3030](https://localhost:3030)
 
 ### Using the Docker Desktop extension
 
-If you have the Labspace extension installed (`docker extension install dockersamples/labspace-extension` if not), you can also click [this link](https://open.docker.com/dashboard/extension-tab?extensionId=dockersamples/labspace-extension&location=dockersamples/labspace-cagent&title=cagent) to launch the Labspace.
+If you have the Labspace extension installed (`docker extension install dockersamples/labspace-extension` if not), you can also click [this link](https://open.docker.com/dashboard/extension-tab?extensionId=dockersamples/labspace-extension&location=dockersamples/labspace-docker-agent&title=docker-agent) to launch the Labspace.
 
 
 ## Contributing

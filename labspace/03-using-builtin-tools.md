@@ -4,11 +4,11 @@ An agent on its own can't do much other than just chat with you. To make agents
 more useful we need to give the agent tools that it can use to gather
 information and execute actions.
 
-`cagent` has builtin tools and also support for MCP (Model Context Protocol).
+`Docker Agent` has builtin tools and also support for MCP (Model Context Protocol).
 
 ## Builtin tools
 
-`cagent` has 3 builtin generic agentic tools:
+`Docker Agent` has 3 builtin generic agentic tools:
 
 - `think`
 - `todo`
@@ -40,7 +40,7 @@ To use this tool, add the `type: think` tool to the toolset of your agent.
 2. Run the agent:
 
     ```bash
-    cagent run think_agent.yaml
+    docker agent run think_agent.yaml
     ```
 
 3. Try thinking by asking your pirate agent: 
@@ -50,7 +50,7 @@ To use this tool, add the `type: think` tool to the toolset of your agent.
     ```
 
 The keen-eyed might have noticed the `version: "2"` on the top of the YAML file
-above. While `cagent` is in active development and breaking things, we _try_ not
+above. While `Docker Agent` is in active development and breaking things, we _try_ not
 to break user's existing agents. If there is no version defined in the YAML
 file, the default version is `0`. The current latest version is `2`. Always try to use
 the latest version.
@@ -76,7 +76,7 @@ The memory tool gives the agent the ability to remember things about the user.
 2. Run the agent:
 
     ```bash
-    cagent run memory_agent.yaml
+    docker agent run memory_agent.yaml
     ```
 
 3. Tell it your name and some random fact about you. Something like:
@@ -92,7 +92,7 @@ The memory tool gives the agent the ability to remember things about the user.
 5. Start a new session with this agent:
 
     ```bash
-    cagent run memory_agent.yaml
+    docker agent run memory_agent.yaml
     ```
 
 6. Ask it what it knows about you. It should correctly look up its internal memory and tell you what it knows. For example: 
@@ -127,7 +127,7 @@ creating our developer agent right now.
 2. Run the agent:
 
     ```bash
-    cagent run developer.yaml
+    docker agent run developer.yaml
     ```
 
 3. Try this agent, see how it _magically_ creates todo lists for its tasks and
@@ -135,7 +135,7 @@ loops until the todos are done.
 
 ### Development Related Builtin Tools
 
-`cagent` agents can be given access to your shell or your filesystem to run
+The agents can be given access to your shell or your filesystem to run
 commands or read/write files or directories.
 
 - `shell`
@@ -163,7 +163,7 @@ Let's enhance our developer agent with these tools.
 2. Try it out:
 
     ```bash
-    cagent run developer.yaml
+    docker agent run developer.yaml
     ```
 
 3. Ask the agent to create a web-based version of snake:
@@ -177,7 +177,7 @@ Let's enhance our developer agent with these tools.
 This developer agent is a good start, but there's one piece missing that
 would make it even better. It doesn't really know anything about the environment
 it is working in. It _could_ find it out by running shell scripts, but that's
-just wasting tokens. `cagent` can automatically add information about the
+just wasting tokens. `docker agent` can automatically add information about the
 environment the agent is working on by adding `add_environment_info: true` to the
 agent definition:
 
@@ -198,7 +198,7 @@ agents:
 Run this agent again:
 
 ```bash
-cagent run developer.yaml
+docker agent run developer.yaml
 ```
 
 Ask it what the current directory is or if the current directory is a git repository. The agent now knows this without having to make any tool calls. Neat!
@@ -230,7 +230,7 @@ agents:
 Run this agent again:
 
 ```bash
-cagent run developer.yaml
+docker agent run developer.yaml
 ```
 
 
