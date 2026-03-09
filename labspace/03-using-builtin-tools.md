@@ -135,7 +135,7 @@ loops until the todos are done.
 
 ### Development Related Builtin Tools
 
-`Docker Agent` agents can be given access to your shell or your filesystem to run
+The agents can be given access to your shell or your filesystem to run
 commands or read/write files or directories.
 
 - `shell`
