@@ -177,7 +177,7 @@ Let's enhance our developer agent with these tools.
 This developer agent is a good start, but there's one piece missing that
 would make it even better. It doesn't really know anything about the environment
 it is working in. It _could_ find it out by running shell scripts, but that's
-just wasting tokens. `cagent` can automatically add information about the
+just wasting tokens. `docker agent` can automatically add information about the
 environment the agent is working on by adding `add_environment_info: true` to the
 agent definition:
 
