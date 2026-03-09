@@ -21,7 +21,7 @@ docker login
 Push your developer agent using the following `docker agent push` command:
 
 ```bash
-docker agent push developer.yaml $$dockerhubid$$/docker-gent-developer
+docker agent share developer.yaml $$dockerhubid$$/docker-gent-developer
 ```
 
 ### Pull an Agent
@@ -29,7 +29,7 @@ docker agent push developer.yaml $$dockerhubid$$/docker-gent-developer
 Pull your agent on any other machine by using the `docker agent pull` command:
 
 ```bash
-docker agent pull $$dockerhubid$$/docker-gent-developer
+docker agent share $$dockerhubid$$/docker-gent-developer
 ```
 
 ### Run Directly from Registry
