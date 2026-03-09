@@ -27,7 +27,7 @@ and then open your browser to [https://localhost:3030](https://localhost:3030)
 
 ### Using the Docker Desktop extension
 
-If you have the Labspace extension installed (`docker extension install dockersamples/labspace-extension` if not), you can also click [this link](https://open.docker.com/dashboard/extension-tab?extensionId=dockersamples/labspace-extension&location=dockersamples/labspace-cagent&title=cagent) to launch the Labspace.
+If you have the Labspace extension installed (`docker extension install dockersamples/labspace-extension` if not), you can also click [this link](https://open.docker.com/dashboard/extension-tab?extensionId=dockersamples/labspace-extension&location=dockersamples/labspace-docker-agent&title=docker-agent) to launch the Labspace.
 
 
 ## Contributing
