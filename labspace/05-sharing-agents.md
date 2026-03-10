@@ -18,18 +18,18 @@ docker login
 
 ### Push Your Agent
 
-Push your developer agent using the following `docker agent push` command:
+Push your developer agent using the following `docker agent share push` command:
 
 ```bash
-docker agent share developer.yaml $$dockerhubid$$/docker-agent-developer
+docker agent share push developer.yaml $$dockerhubid$$/docker-agent-developer
 ```
 
 ### Pull an Agent
 
-Pull your agent on any other machine by using the `docker agent pull` command:
+Pull your agent on any other machine by using the `docker agent share pull` command:
 
 ```bash
-docker agent share $$dockerhubid$$/docker-agent-developer
+docker agent share pull $$dockerhubid$$/docker-agent-developer
 ```
 
 ### Run Directly from Registry
