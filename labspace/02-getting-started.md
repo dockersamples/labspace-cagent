@@ -29,7 +29,7 @@
 
 In order to complete this lab, you will need an API key from one of the following providers:
 
-::variableSetButton[Use OpenAI]{variables="provider=openai,model=openai/gpt-5-nano,modelShort=gpt-5-nano"}
+::variableSetButton[Use OpenAI]{variables="provider=openai,model=openai/gpt-5.4-nano,modelShort=gpt-5.4-nano"}
 
 ::variableSetButton[Use Anthropic]{variables="provider=anthropic,model=anthropic/claude-sonnet-4-6,modelShort=claude-sonnet-4-6"}
 
